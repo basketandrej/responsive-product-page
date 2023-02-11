@@ -30,10 +30,23 @@ img {
 }
 
 header {
-  display: flex;
-  justify-content: flex-end;
+  
 }
 
-header ul {
- 
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  
 }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 1em;
+  width: 100%;
+}
+
