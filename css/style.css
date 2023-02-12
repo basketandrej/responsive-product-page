@@ -3,7 +3,7 @@
 }
 
 * {
-  box-sizing: border-box;x
+  box-sizing: border-box;
 }
 
 *,
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 1em; 
 }
 
 img {
@@ -30,23 +30,32 @@ img {
 }
 
 header {
-  
-}
-
-.flex-header {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
 .grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: center;
-  padding: 1em;
   width: 100%;
 }
 
