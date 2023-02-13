@@ -1,5 +1,12 @@
 :root {
   background-color: #fff;
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
 * {
@@ -20,8 +27,48 @@ html {
   line-height: 1.4;
 }
 
+h1 {
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  font-size: var(--font-size-base);
+}
+
+
+small {
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+button {
+  color: #fff;
+  background-color: black;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  font-size: var(--font-size-base);
+  border: none;
+}
+
+.limited {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+}
+
+
 body {
-  margin: 0 1em; 
+  margin:0;
 }
 
 img {
@@ -33,7 +80,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 1em;
+  padding-bottom: 1em;
 }
+
+.logo {
+  width: 30%;
+  height: 30%;
+}
+ 
 
 nav ul {
   display: flex;
@@ -43,6 +98,13 @@ nav ul {
   text-transform: uppercase;
 }
 
+section {
+  padding-bottom: 2em;
+}
+
+.valentine-description {
+  border-bottom: #f4f4f4 3px solid;
+}
 
 a {
   text-decoration: none;
@@ -51,11 +113,83 @@ a {
 }
 
 .grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2em 0;
+  gap: 1em;
+  margin: 0 1em;
+  border-top: #f4f4f4 3px solid;
+}
+
+.grid img {
+  border-radius: 0.3em;
+}
+
+.valentine-description, .dough, .Try {
+  margin: 0 1em;
+
+}
+
+
+
+#first-product {
+  grid-area: 1 / 1 / span 3 / span 3;
+}
+
+.people {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.grid2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+article {
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+}
+
+article img {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+footer {
+  text-align: center;
+  border-top: 3px #f4f4f4 solid;
+}
+
+@media only screen and (min-width: 48em) {
+  
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+
+
+
+
+
+/*.grid {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: center;
   width: 100%;
+  padding: 2em 0;
 }
+*/
+
+
 
