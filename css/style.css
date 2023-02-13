@@ -168,10 +168,43 @@ footer {
 }
 
 @media only screen and (min-width: 48em) {
-  
+  .grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  #first-product {
+    grid-area: 1 / 1;
+  }
+
+  .dough div {
+    display: flex;
+    gap: 1em;
+
+  }
+
+  figure {
+    display: flex;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2em;
+  }
+
+  footer {
+    padding: 2em 0;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+  .gridoftwo {
+    display: flex;
+    align-items: center;
+    
+  }
 
 }
 
