@@ -118,8 +118,11 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em 0;
   gap: 1em;
-  margin: 0 1em;
+}
+
+.gridoftwo {
   border-top: #f4f4f4 3px solid;
+  margin: 0 1em;
 }
 
 .grid img {
